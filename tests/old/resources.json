@@ -1,0 +1,76 @@
+[
+  {
+    "_id": "resource_1",
+    "tenantId": "tenant_1",
+    "name": "API 1",
+    "permissions": {
+      "users": ["user_1"],
+      "groups": ["group_2"]
+    }
+  },
+  {
+    "_id": "resource_2",
+    "tenantId": "tenant_1",
+    "name": "API 2",
+    "permissions": {      
+      "groups": ["group_1"]
+    }
+  },
+  {
+    "_id": "resource_3",
+    "tenantId": "tenant_2",
+    "name": "API 3",
+    "permissions": {
+      "users": ["user_9"],
+      "groups": ["group_3", "group_4", "group_5"]
+    }
+  },
+  {
+    "_id": "resource_4",
+    "tenantId": "tenant_2",
+    "name": "API 4",
+    "permissions": {
+      "users": ["user_3", "user_5"]  
+    }
+  },
+  {
+    "_id": "resource_5",
+    "tenantId": "tenant_4",
+    "name": "API 5",
+    "permissions": {
+      "users": ["user_6"]  
+    }
+  },
+  {
+    "_id": "resource_6",
+    "tenantId": "tenant_4",
+    "name": "API 6",
+    "permissions": {
+      "users": ["user_8"]  
+    }
+  },
+  {
+    "_id": "resource_7",
+    "tenantId": "tenant_3",
+    "name": "API 7",
+    "permissions": {
+      "users": ["user_7"]  
+    }
+  },
+  {
+    "_id": "resource_8",
+    "tenantId": "tenant_3",
+    "name": "API 8",
+    "permissions": {
+      "users": ["user_7", "user_5"]  
+    }
+  },
+  {
+    "_id": "resource_9",
+    "tenantId": "tenant_2",
+    "name": "API 9",
+    "permissions": {
+      "groups": ["group_6"]  
+    }
+  }
+]

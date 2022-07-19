@@ -1,0 +1,69 @@
+[
+  {
+    "_id": "user_1",
+    "tenantId": "tenant_1",
+    "name": "Homer Simpson",
+    "email": "homer@xyz.com",
+    "role": "owner",
+    "groups": ["group_1", "group_2"]
+  },
+  {
+    "_id": "user_2",
+    "tenantId": "tenant_1",
+    "name": "Bart Simpson",
+    "email": "bart@xyz.com",
+    "role": "contributor",
+    "groups": ["group_2"]
+  },
+  {
+    "_id": "user_3",
+    "tenantId": "tenant_2",
+    "name": "Marge Simpson",
+    "email": "marge@acme.com",
+    "role": "owner",
+    "groups": ["group_3", "group_4"]
+  },
+  {
+    "_id": "user_4",
+    "tenantId": "tenant_2",
+    "name": "Lisa Simpson",
+    "email": "lisa@acme.com",
+    "role": "admin",
+    "groups": ["group_4", "group_5", "group_6"]
+  },
+  {
+    "_id": "user_5",
+    "tenantId": "tenant_3",
+    "name": "John Doe",
+    "email": "jdoe@gmail.com",
+    "role": "owner"
+  },
+  {
+    "_id": "user_6",
+    "tenantId": "tenant_4",
+    "name": "Joe Bart",
+    "email": "joebart@gmail.com",
+    "role": "owner"
+  },
+  {
+    "_id": "user_7",
+    "tenantId": "tenant_3",
+    "name": "Foo Bar",
+    "email": "foobar@gmail.com",
+    "role": "contributor"
+  },
+  {
+    "_id": "user_8",
+    "tenantId": "tenant_4",
+    "name": "Ned Flanders",
+    "email": "ned@simpsons.com",
+    "role": "contributor"
+  },
+  {
+    "_id": "user_9",
+    "tenantId": "tenant_2",
+    "name": "Mr. Burns",
+    "email": "burns@simpson.com",
+    "role": "contributor"
+  }
+]

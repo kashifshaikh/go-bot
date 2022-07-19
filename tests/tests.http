@@ -1,0 +1,71 @@
+### Get all profiles
+GET http://localhost:8888/profiles
+
+### Get all profiles including one flagged for deletion
+GET http://localhost:8888/profiles?deleted=true
+
+### Mark all profiles for deletion
+DELETE http://localhost:8888/profiles
+
+### Purge deleted profiles
+DELETE http://localhost:8888/profiles?purge=true
+
+
+### Delete single profile
+DELETE http://localhost:8888/profiles/3
+
+
+### Create a new profile /w CC entry
+POST http://localhost:8888/profiles
+Content-Type: application/json
+
+{
+  "name": "Profile1",
+  "email": "kash@gobot.com",
+  "billingAddress": {
+      "firstName": "kashif",
+      "lastName": "shaikh",
+      "address1": "123 Fake Street",
+      "city": "toronto",
+      "province": "ON",
+      "postalCode": "A1A2B2",
+      "country": "CA"
+  },
+  "creditCard": {
+      "firstName": "kashif", 
+      "lastName": "shaikh",
+      "number": "4111111111111111",
+      "expMonth": "12",
+      "expYear": "2025",
+      "cvv": "411"
+  }
+}
+
+### Modify existing profile above, and add shipping address. CC will remain intact. 
+POST http://localhost:8888/profiles/1
+Content-Type: application/json
+
+{ 
+  "name": "Profile1",
+  "email": "kash@gobot.com", 
+  "billingAddress": {
+      "firstName": "kashif",
+      "lastName": "shaikh",
+      "address1": "123 Fake Street",
+      "city": "toronto",
+      "province": "ON",
+      "postalCode": "A1A2B2",
+      "country": "CA"
+  },
+  "shippingAddress": {
+      "firstName": "kashif",
+      "lastName": "shaikh",
+      "address1": "123 Fake Street",
+      "city": "toronto",
+      "province": "ON",
+      "postalCode": "A1A2B2",
+      "country": "CA"
+  }
+}
+
+
