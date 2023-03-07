@@ -7,3 +7,6 @@ So I created a new project built with Electron, React, and Golang, where the Rea
 The golang project is using Echo web framework, Gorilla Websockets, BoltDB, and Storm ORM.
 
 This is unfinished project - currently you can add/remove/update/get Billing/Credit card profiles and we perform validation checks on the CC and Addresses. You can also send websocket ping messages to `/ws` endpoint, and with pong back with the payload. 
+
+# To run
+go cmd/bot.go
