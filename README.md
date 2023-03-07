@@ -9,4 +9,4 @@ The golang project is using Echo web framework, Gorilla Websockets, BoltDB, and 
 This is unfinished project - currently you can add/remove/update/get Billing/Credit card profiles and we perform validation checks on the CC and Addresses. You can also send websocket ping messages to `/ws` endpoint, and with pong back with the payload. 
 
 # To run
-go cmd/bot.go
+go run cmd/bot.go
